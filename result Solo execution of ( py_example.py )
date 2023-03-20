@@ -1,0 +1,24 @@
+
+uname_result(system='Linux', node='fedora', release='6.1.18-200.fc37.x86_64', version='#1 SMP PREEMPT_DYNAMIC Sat Mar 11 16:09:14 UTC 2023', machine='x86_64')
+
+fizz_choices:[0, 7, 4, 4, 5]
+buzz_choices:[7, 0, 6, 7, 7]
+first_number_evaluated:[-44, -44, -36, -35, -35]
+last_number_evaluat4ed:[44, 44, 36, 35, 35]
+current_index_of_choices:2
+FIZZ
+['-36 == Fizz', '-32 == Fizz', '-28 == Fizz', '-24 == Fizz', '-20 == Fizz', '-16 == Fizz', '-12 == Fizz', '-8 == Fizz', '-4 == Fizz', '4 == Fizz', '8 == Fizz', '12 == Fizz', '16 == Fizz', '20 == Fizz', '24 == Fizz', '28 == Fizz', '32 == Fizz', '36 == Fizz']
+BUZZ
+['-36 == Buzz', '-30 == Buzz', '-24 == Buzz', '-18 == Buzz', '-12 == Buzz', '-6 == Buzz', '6 == Buzz', '12 == Buzz', '18 == Buzz', '24 == Buzz', '30 == Buzz', '36 == Buzz']
+FIZZBUZZ
+['-36 == FizzBuzz', '-24 == FizzBuzz', '-12 == FizzBuzz', '12 == FizzBuzz', '24 == FizzBuzz', '36 == FizzBuzz']
+
+Expected 'fizz' Results == Actual 'fizz'_Results
+Expected 'buzz' Results == Actual 'buzz'_Results
+Expected 'fizzbuzz' Results == Actual 'fizzbuzz'_Results
+Testing of 'fizzbuzz'  Passed
+
+'is_weekday()' datetime_now == 2023-03-19 13:40:40.593611
+'is_weekday()' day_num == 6 of Six
+'display_name_weekend()' Day of the week == Sunday
+'is_weekday()' flag_weekday == False

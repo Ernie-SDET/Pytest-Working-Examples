@@ -1,0 +1,107 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.2, pytest-7.2.2, pluggy-1.0.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/fish/Desktop/PYTHON/Pytest
+plugins: mock-3.10.0
+collecting ... collected 29 items
+
+pytest_example.py::test_display_OS_version PASSED                        [  3%]
+pytest_example.py::test_display_python_module_name PASSED                [  6%]
+pytest_example.py::test_divide_negatives PASSED                          [ 10%]
+pytest_example.py::test_divide_mixed_01 PASSED                           [ 13%]
+pytest_example.py::test_divide_mixed_02 PASSED                           [ 17%]
+pytest_example.py::test_divide_positives PASSED                          [ 20%]
+pytest_example.py::test_divide_bad_value_01 PASSED                       [ 24%]
+pytest_example.py::test_divide_bad_value_02 PASSED                       [ 27%]
+pytest_example.py::test_divide_by_zero_11 PASSED                         [ 31%]
+pytest_example.py::test_divide_by_zero_22 PASSED                         [ 34%]
+pytest_example.py::test_200_OK_get_joke PASSED                           [ 37%]
+pytest_example.py::test_301_get_joke PASSED                              [ 41%]
+pytest_example.py::test_302_get_joke PASSED                              [ 44%]
+pytest_example.py::test_401_get_joke PASSED                              [ 48%]
+pytest_example.py::test_403_get_joke PASSED                              [ 51%]
+pytest_example.py::test_404_get_joke PASSED                              [ 55%]
+pytest_example.py::test_410_get_joke PASSED                              [ 58%]
+pytest_example.py::test_500_get_joke PASSED                              [ 62%]
+pytest_example.py::test_502_get_joke PASSED                              [ 65%]
+pytest_example.py::test_503_get_joke PASSED                              [ 68%]
+pytest_example.py::test_504_get_joke PASSED                              [ 72%]
+pytest_example.py::test_len_joke PASSED                                  [ 75%]
+pytest_example.py::test_display_name_weekday PASSED                      [ 79%]
+pytest_example.py::test_display_name_weekend PASSED                      [ 82%]
+pytest_example.py::test_file_remove PASSED                               [ 86%]
+pytest_example.py::test_get_random_int PASSED                            [ 89%]
+pytest_example.py::test_weekend PASSED                                   [ 93%]
+pytest_example.py::test_weekday PASSED                                   [ 96%]
+pytest_example.py::test_zfizzbuzz PASSED                                 [100%]
+
+==================================== PASSES ====================================
+___________________________ test_display_OS_version ____________________________
+----------------------------- Captured stdout call -----------------------------
+
+uname_result(system='Linux', node='fedora', release='6.1.18-200.fc37.x86_64', version='#1 SMP PREEMPT_DYNAMIC Sat Mar 11 16:09:14 UTC 2023', machine='x86_64')
+
+_______________________ test_display_python_module_name ________________________
+----------------------------- Captured stdout call -----------------------------
+Testing Module: /home/fish/Desktop/PYTHON/Pytest/py_example.py
+_________________________________ test_weekend _________________________________
+----------------------------- Captured stdout call -----------------------------
+
+'is_weekday()' datetime_now == 2018-10-06 00:00:00
+'is_weekday()' day_num == 5 of Six
+'display_name_weekend()' Day of the week == Saturday
+'is_weekday()' flag_weekday == False
+
+'is_weekday()' datetime_now == 2018-10-07 00:00:00
+'is_weekday()' day_num == 6 of Six
+'display_name_weekend()' Day of the week == Sunday
+'is_weekday()' flag_weekday == False
+_________________________________ test_weekday _________________________________
+----------------------------- Captured stdout call -----------------------------
+
+'is_weekday()' datetime_now == 2018-10-01 00:00:00
+'is_weekday()' day_num == 0 of Six
+'display_name_weekday()' Day of the week == Monday
+'is_weekday()' flag_weekday == True
+
+'is_weekday()' datetime_now == 2018-10-02 00:00:00
+'is_weekday()' day_num == 1 of Six
+'display_name_weekday()' Day of the week == Tuesday
+'is_weekday()' flag_weekday == True
+
+'is_weekday()' datetime_now == 2018-10-03 00:00:00
+'is_weekday()' day_num == 2 of Six
+'display_name_weekday()' Day of the week == Wednesday
+'is_weekday()' flag_weekday == True
+
+'is_weekday()' datetime_now == 2018-10-04 00:00:00
+'is_weekday()' day_num == 3 of Six
+'display_name_weekday()' Day of the week == Thursday
+'is_weekday()' flag_weekday == True
+
+'is_weekday()' datetime_now == 2018-10-05 00:00:00
+'is_weekday()' day_num == 4 of Six
+'display_name_weekday()' Day of the week == Friday
+'is_weekday()' flag_weekday == True
+________________________________ test_zfizzbuzz ________________________________
+----------------------------- Captured stdout call -----------------------------
+
+uname_result(system='Linux', node='fedora', release='6.1.18-200.fc37.x86_64', version='#1 SMP PREEMPT_DYNAMIC Sat Mar 11 16:09:14 UTC 2023', machine='x86_64')
+
+fizz_choices:[0, 7, 4, 4, 5]
+buzz_choices:[7, 0, 6, 7, 7]
+first_number_evaluated:[-44, -44, -36, -35, -35]
+last_number_evaluat4ed:[44, 44, 36, 35, 35]
+current_index_of_choices:2
+FIZZ
+['-36 == Fizz', '-32 == Fizz', '-28 == Fizz', '-24 == Fizz', '-20 == Fizz', '-16 == Fizz', '-12 == Fizz', '-8 == Fizz', '-4 == Fizz', '4 == Fizz', '8 == Fizz', '12 == Fizz', '16 == Fizz', '20 == Fizz', '24 == Fizz', '28 == Fizz', '32 == Fizz', '36 == Fizz']
+BUZZ
+['-36 == Buzz', '-30 == Buzz', '-24 == Buzz', '-18 == Buzz', '-12 == Buzz', '-6 == Buzz', '6 == Buzz', '12 == Buzz', '18 == Buzz', '24 == Buzz', '30 == Buzz', '36 == Buzz']
+FIZZBUZZ
+['-36 == FizzBuzz', '-24 == FizzBuzz', '-12 == FizzBuzz', '12 == FizzBuzz', '24 == FizzBuzz', '36 == FizzBuzz']
+
+Expected 'fizz' Results == Actual 'fizz'_Results
+Expected 'buzz' Results == Actual 'buzz'_Results
+Expected 'fizzbuzz' Results == Actual 'fizzbuzz'_Results
+Testing of 'fizzbuzz'  Passed
+============================== 29 passed in 0.11s ==============================
